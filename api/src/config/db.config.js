@@ -1,3 +1,8 @@
+const {
+    DB_HOST,
+    DB_PORT,
+} = process.env;
+
 module.exports = {
-    url: `mongodb://db:27017`
+    url: `mongodb://${DB_HOST}:${DB_PORT}`
 };
