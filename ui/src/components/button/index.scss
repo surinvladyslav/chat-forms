@@ -1,0 +1,63 @@
+.btn {
+  background-color: white;
+  color: #00952E;
+  border: 2px solid #00952E;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 0.6rem 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+
+  & svg {
+    width: 14px;
+    margin-right: .3rem;
+
+    & path {
+      fill: #00952E;
+    }
+  }
+
+  &.disabled {
+    user-select: none;
+    cursor: default;
+    opacity: 0.4;
+
+    &:hover {
+      background-color: white;
+      color: #00952E;
+      border: 2px solid #00952E;
+    }
+  }
+
+  &.active {
+    background-color: #00952E;
+    color: white;
+
+    & svg {
+      & path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: #00952E;
+    color: white;
+
+    & svg {
+      & path {
+        fill: #fff;
+      }
+    }
+  }
+}

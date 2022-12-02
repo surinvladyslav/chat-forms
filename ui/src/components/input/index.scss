@@ -1,0 +1,49 @@
+.input-message-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid #00952E;
+  box-sizing: border-box;
+
+  & button {
+    margin-right: 0.7rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 5px;
+    outline: none;
+
+    & svg {
+      width: 2rem !important;
+      height: auto;
+      transform: rotateZ(45deg);
+
+      & path {
+        transition: .2s;
+        fill: #00952E;
+      }
+    }
+
+    &:hover {
+      & svg path {
+        fill: #007925;
+      }
+    }
+  }
+}
+
+.chat-tools .input-message-input {
+  background: none;
+  width: 100%;
+  overflow-y: unset;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.3125;
+  padding: 0.8rem 1rem;
+}

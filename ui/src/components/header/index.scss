@@ -1,0 +1,181 @@
+.header,
+.chat-header {
+  border-bottom: 2px solid #F5F5F5;
+}
+
+.chat-header {
+  padding: 0.9rem 2rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.header-logo {
+  & img {
+    height: 4rem;
+  }
+}
+
+.chat-info {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 3rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.3rem;
+}
+
+.bottom {
+  font-size: .875rem;
+}
+
+.peer-title, .topbar .info {
+  white-space: nowrap;
+  user-select: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  color: #444444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bottom .online {
+  color: #00952E;
+  font-size: 14px;
+  user-select: none;
+  font-weight: bold;
+}
+
+.online.typing {
+  color: #00952E;
+
+  .online-text {
+    display: none;
+  }
+
+  .peer-typing,
+  .peer-typing-description {
+    display: unset;
+  }
+}
+
+.peer-typing,
+.peer-typing-description {
+  display: none;
+}
+
+.online-text {
+  display: unset;
+}
+
+.peer-typing {
+  margin-right: 4px;
+}
+
+.peer-typing-text-dot:first-child {
+  -webkit-animation-name: dotFirst;
+  animation-name: dotFirst;
+}
+
+.peer-typing-text-dot:last-child {
+  -webkit-animation-name: dotLast;
+  animation-name: dotLast;
+}
+
+.peer-typing-text-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #00952E;
+  margin: 0 0.5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: dotMiddle;
+  animation-name: dotMiddle;
+}
+
+@keyframes dotFirst {
+  0% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+  50% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+}
+
+@keyframes dotLast {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+  75% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dotMiddle {
+  0% {
+    transform: scale(0.8333333333);
+    opacity: .9;
+  }
+  12.5% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+  62.5% {
+    transform: scale(0.6666666667);
+    opacity: .8;
+  }
+  87.5% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8333333333);
+    opacity: .9;
+  }
+}

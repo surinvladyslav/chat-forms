@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px) {
+  .tabs-container .tabs-tab {
+    background-size: cover;
+  }
+}
+
+.bg {
+  background-image: url("../public/images/background.png");
+  filter: blur(7px);
+  height: calc(100% - 90px);
+  background-position: center;
+  background-size: contain;
+}
+
+.animated {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  > .animated-block {
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+    animation: .3s forwards animation ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 5;
+    transform-origin: top right;
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

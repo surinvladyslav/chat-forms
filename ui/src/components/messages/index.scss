@@ -1,0 +1,30 @@
+.bubbles {
+  flex: 1 1 auto;
+  position: relative;
+  transform: translate3d(0,0,0);
+  transition: transform .25s cubic-bezier(.4,0,.2,1);
+  width: 100%;
+}
+
+.bubbles-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto;
+  min-height: 100%;
+  padding: 0 0.8125rem;
+  transform: translateY(0);
+  transition: transform .25s cubic-bezier(.4,0,.2,1);
+}
+
+.bubbles-date-group {
+  position: relative;
+}
+
+.bubbles-group {
+  position: relative;
+
+  &:last-child {
+    margin-bottom: .5rem;
+  }
+}

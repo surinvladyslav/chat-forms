@@ -1,0 +1,32 @@
+.alert {
+  opacity: 0;
+  z-index: 1000;
+  transition: 1s;
+  display: flex;
+  font-size: 12px;
+  text-transform: capitalize;
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  width: 50%;
+  max-width: 24rem;
+  border-radius: 15px;
+  box-shadow: -2px 1px 40px rgb(2 115 37 / 18%);
+  padding: 1rem 1.3rem;
+  top: -100%;
+  right: 1rem;
+
+  & p {
+    font-size: 16px;
+    margin-left: 0.5rem;
+  }
+
+  & img {
+    height: 1.3rem;
+  }
+
+  &.active {
+    opacity: 1;
+    top: 1rem;
+  }
+}

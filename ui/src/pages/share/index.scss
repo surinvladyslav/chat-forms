@@ -1,0 +1,126 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-title {
+  font-weight: 700;
+  font-size: 26px;
+  color: #00952E;
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  margin: 0;
+  margin-bottom: 0.2rem;
+
+  &.base {
+    &:after {
+      height: 2rem;
+      content: "";
+      background: url("../../../public/images/party-popper.png");
+      position: absolute;
+      width: 1.8rem;
+      background-size: 1.8rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      right: -2.2rem;
+    }
+  }
+
+  &.friends {
+    font-size: 21px;
+    margin-bottom: 1rem;
+
+    &:after {
+      height: 2rem;
+      content: "";
+      background: url("../../../public/images/handshake.png");
+      position: absolute;
+      width: 1.8rem;
+      background-size: 1.8rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      right: -2.2rem;
+    }
+  }
+}
+
+.share-subtitle {
+  font-weight: 400;
+  font-size: 21px;
+  color: #00952E;
+  margin-bottom: 1rem;
+}
+
+.share-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.friends {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.share-link {
+  margin: 0 0.5rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #444444;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+
+  &:hover {
+    color: #00952E;
+  }
+
+  & img {
+    margin-right: .6rem;
+  }
+}
+
+.share-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.share-button {
+  background: #00952E;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  padding: 1.3rem;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.7rem;
+
+  & img {
+    height: auto;
+    width: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .share-title {
+    display: unset;
+    align-items: unset;
+
+    & img {
+      height: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+}
+

@@ -1,0 +1,138 @@
+.chat-tools {
+  padding: 0.9rem 2rem;
+  width: 100%;
+  display: flex;
+  grid-gap: 0.3rem;
+  flex-direction: column;
+  //align-items: center;
+  margin: 0 auto;
+  transition: all 0.2s ease-out;
+  position: relative;
+  max-height: 17rem;
+  border-top: 2px solid #F5F5F5;
+  min-height: 4.5rem;
+  box-sizing: border-box;
+
+  & .scrollable.scrollable-y {
+    position: unset;
+  }
+}
+
+.chat-tools-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  flex: 0 0 auto;
+}
+
+.rows-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.3rem;
+  align-items: center;
+}
+
+.react-time-picker__clear-button.react-time-picker__button,
+.react-time-picker__clock-button.react-time-picker__button{
+  display: none;
+}
+
+.input-message-input {
+  transition: height .1s;
+}
+
+.react-time-picker__wrapper {
+  border: none;
+}
+
+.picker__wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.react-datepicker__input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__hour,
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__minute{
+  outline: none;
+}
+
+.react-time-picker__clock.react-time-picker__clock--open {
+  display: none;
+}
+
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__amPm,
+.react-time-picker__inputGroup__leadingZero {
+  color: #00952E;
+  font-weight: bold;
+  outline: none;
+}
+
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__hour,
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__minute {
+  font-weight: bold;
+  color: #00952E;
+}
+
+.react-datepicker__input-container input,
+.react-time-picker__inputGroup {
+  background-color: white;
+  color: #00952E;
+  border: 2px solid #00952E;
+  border-radius: 5px;
+  width: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  outline: none;
+  margin-right: 0.2rem;
+  font-size: 15px;
+}
+
+[contenteditable=true] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  outline: none;
+  cursor: text;
+  white-space: pre-wrap;
+}
+
+input {
+  caret-color: #444444;
+  color: #444444;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #a2acb4;
+}
+
+.row {
+  display: none;
+  transform-origin: bottom;
+
+  &.active {
+    display: block;
+    animation: fadeIn 0.3s
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}

@@ -1,0 +1,17 @@
+.chat-questions {
+  flex: 0 0 auto;
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate3d(0, var(--translateY), 0);
+}
+
+.chat-questions-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  max-height: 7.5rem;
+  gap: 0.3rem;
+}

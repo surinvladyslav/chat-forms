@@ -1,0 +1,93 @@
+button, input, optgroup, select, textarea, html {
+  font-family: sans-serif;
+}
+
+input, textarea, button, select, a, div {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  font-weight: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html:not(.is-safari):not(.is-ios)::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+html:not(.is-safari):not(.is-ios)::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+html:not(.is-safari):not(.is-ios)::-webkit-scrollbar-thumb {
+  opacity: 0;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+img, video {
+  -webkit-user-drag: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-size: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.picker-dialog {
+  border: none !important;
+  border-radius: 12px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    height: calc(1vh * 100);
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
