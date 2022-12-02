@@ -2,7 +2,6 @@ version: "3"
 services:
   db:
     image: mongo
-    #    platform: linux/amd64
     ports:
       - 27017:27017
     container_name: mongo-db
@@ -15,7 +14,6 @@ services:
     build:
       context: ./ui
       dockerfile: Dockerfile
-#    platform: linux/amd64
     ports:
       -  3000:3000
     container_name: mern-ui
@@ -33,7 +31,6 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
-#    platform: linux/amd64
     ports:
       - 3080:3080
     container_name: mern-api
